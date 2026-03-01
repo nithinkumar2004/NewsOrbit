@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+:root{--bg:#0f172a;--bg2:#1e293b;--text:#e2e8f0;--card:rgba(255,255,255,.08);--accent:#38bdf8}
+body{font-family:'Inter',sans-serif;background:linear-gradient(120deg,#0f172a,#1d4ed8,#9333ea);background-size:240% 240%;animation:gradient 15s ease infinite;min-height:100vh;color:var(--text)}
+body.light{--bg:#f8fafc;--bg2:#e2e8f0;--text:#0f172a;--card:rgba(255,255,255,.7)}
+@keyframes gradient{0%{background-position:0 50%}50%{background-position:100% 50%}100%{background-position:0 50%}}
+.glass{background:var(--card);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.1);border-radius:1rem}
+.news-card{transition:.25s transform,.25s opacity}.news-card:hover{transform:translateY(-4px)}
+.skeleton{height:130px;border-radius:1rem;background:linear-gradient(90deg,rgba(255,255,255,.08),rgba(255,255,255,.2),rgba(255,255,255,.08));background-size:200% 100%;animation:shimmer 1.2s infinite}
+@keyframes shimmer{from{background-position:200% 0}to{background-position:-200% 0}}
+.fade-in{animation:fadeIn .4s ease}.sentiment-badge{font-size:.75rem}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
